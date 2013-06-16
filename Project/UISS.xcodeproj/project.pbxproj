@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A21F3DE5176D7EE300D1A3A6 /* UISSMediaQueryPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = A21F3DE3176D7EE300D1A3A6 /* UISSMediaQueryPreprocessor.h */; };
+		A21F3DE6176D7EE300D1A3A6 /* UISSMediaQueryPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F3DE4176D7EE300D1A3A6 /* UISSMediaQueryPreprocessor.m */; };
 		C8D2B032C59FD11A701C83C8 /* UISSSettingDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */; };
 		C8D2B2E56583BF0D585ECFC4 /* UISSSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B93A4CE1D6D274BC9D3D /* UISSSettingsViewController.h */; };
 		C8D2B403B49E791D1C7C7839 /* UIFont+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */; };
@@ -200,6 +202,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A21F3DE3176D7EE300D1A3A6 /* UISSMediaQueryPreprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISSMediaQueryPreprocessor.h; sourceTree = "<group>"; };
+		A21F3DE4176D7EE300D1A3A6 /* UISSMediaQueryPreprocessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSMediaQueryPreprocessor.m; sourceTree = "<group>"; };
 		C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISSSettingDescriptor.h; sourceTree = "<group>"; };
 		C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeValueConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSImageResizingModeValueConverter.m; sourceTree = "<group>"; };
 		C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+UISS.m"; sourceTree = "<group>"; };
@@ -856,6 +860,8 @@
 		E1BD5E0F1568095D00288A28 /* Preprocessors */ = {
 			isa = PBXGroup;
 			children = (
+				A21F3DE3176D7EE300D1A3A6 /* UISSMediaQueryPreprocessor.h */,
+				A21F3DE4176D7EE300D1A3A6 /* UISSMediaQueryPreprocessor.m */,
 				E15B384E157257C3005BFF73 /* UISSDictionaryPreprocessor.h */,
 				E1A775BA1567945D000406CC /* UISSVariablesPreprocessor.h */,
 				E1A775BB1567945D000406CC /* UISSVariablesPreprocessor.m */,
@@ -991,6 +997,7 @@
 				C8D2B5AED4BB2B1D68E5BA5C /* UISS+GestureRecognizers.h in Headers */,
 				E1C64FF616DFE8AF004861ED /* UISSMacros.h in Headers */,
 				C8D2BEB7BAC6C878B58BC1A9 /* UISSTextAlignmentValueConverter.h in Headers */,
+				A21F3DE5176D7EE300D1A3A6 /* UISSMediaQueryPreprocessor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1199,6 +1206,7 @@
 				C8D2BF2ADDB11891AE3310FA /* UISSSettingDescriptor.m in Sources */,
 				C8D2BA99525048D454BCA45D /* UISS+GestureRecognizers.m in Sources */,
 				C8D2BCA04FA368B1EF9B6692 /* UISSTextAlignmentValueConverter.m in Sources */,
+				A21F3DE6176D7EE300D1A3A6 /* UISSMediaQueryPreprocessor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

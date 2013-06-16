@@ -363,6 +363,28 @@ Example:
 ## User Interface Idioms
 
 
+## Media Queries
+
+If you want to have specific attributes per device (e.g.: iPhone 4, iPhone 5), you can wrap them in a syntax similar to CSS media queries:
+
+```json
+{
+    "@media(device-height: 568px)": {
+        "UIButton": {
+            "font": ["bold", 14]
+        }
+    },
+
+    "@media(device-height: 480px)": {
+        "UIButton": {
+            "font": ["bold", 12]
+        }
+    }
+}
+```
+
+Currently, only `device-height` and `device-width` media features are implemented.
+
 
 ## Comments
 
