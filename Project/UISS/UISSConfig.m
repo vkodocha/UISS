@@ -24,6 +24,7 @@
 #import "UISSVariablesPreprocessor.h"
 #import "UISSDisabledKeysPreprocessor.h"
 #import "UISSTextAlignmentValueConverter.h"
+#import "UISSMediaQueryPreprocessor.h"
 
 @implementation UISSConfig
 
@@ -79,6 +80,7 @@
     return [NSArray arrayWithObjects:
                             [[UISSDisabledKeysPreprocessor alloc] init],
                             [[UISSUserInterfaceIdiomPreprocessor alloc] init],
+                            [[UISSMediaQueryPreprocessor alloc] init],
                             [[UISSVariablesPreprocessor alloc] init],
                             nil];
 }

@@ -378,6 +378,28 @@ With UISS you can create parts of style that apply only to a specified UI Idiom.
 }
 ```
 
+## Media Queries
+
+If you want to have specific attributes per device (e.g.: iPhone 4, iPhone 5), you can wrap them in a syntax similar to CSS media queries:
+
+```json
+{
+    "@media(device-height: 568px)": {
+        "UIButton": {
+            "font": ["bold", 14]
+        }
+    },
+
+    "@media(device-height: 480px)": {
+        "UIButton": {
+            "font": ["bold", 12]
+        }
+    }
+}
+```
+
+Currently, only `device-height` and `device-width` media features are implemented.
+
 ## Comments
 
 JSON specification doesn't support comments. But sometimes being able to easly disable some parts of your UISS style can be really useful. You can do that by adding ```-``` prefix to dictionary keys. UISS will ignore those keys without reporting errors.

@@ -33,6 +33,12 @@
 
 - (SEL)selector {
     if (_selector == NULL) {
+        _selector = [self findSimpleSelectorForPropertyName:self.property.name
+                                                      class:self.appearanceClass];
+        if (_selector) {
+            return _selector;
+        }
+        
         _selector = [self findSelectorMatchingRegexp:[self selectorRegexp] class:self.appearanceClass
                                  currentBestSelector:NULL];
     }
@@ -62,6 +68,16 @@
     }
 
     return _methodSignature;
+}
+
+- (SEL)findSimpleSelectorForPropertyName:(NSString *)propertyName class:(Class <UIAppearance>)class
+{
+    SEL setter = NSSelectorFromString([NSString stringWithFormat:@"set%@:",
+                                       [propertyName uppercaseFirstCharacterString]]);
+    if (class_getInstanceMethod(class, setter)) {
+        return setter;
+    }
+    return nil;
 }
 
 - (SEL)findSelectorMatchingRegexp:(NSString *)regexp class:(Class <UIAppearance>)class currentBestSelector:(SEL)currentBestSelector {
@@ -187,7 +203,7 @@
 
 - (NSInvocation *)invocation {
     if (self.methodSignature == nil) return nil;
-
+    
     NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:self.methodSignature];
     invocation.selector = self.selector;
     invocation.target = self.target;
